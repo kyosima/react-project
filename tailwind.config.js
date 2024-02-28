@@ -7,6 +7,9 @@ module.exports = {
         "vy-jang": "#305B81",
       },
     },
+    fontFamily:{
+      merri : ["Merriweather","serif"]
+    },
     screens: {
       sm: "380px",
       md: "768px",

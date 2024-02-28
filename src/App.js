@@ -1,6 +1,6 @@
 export default function App() {
   return (
-    <div className="bg-[#A9C5DE]">
+    <div className="bg-[#A9C5DE] font-merri">
       <div class="grid grid-cols-12 gap-5 container mx-auto p-6 md:px-6">
         <div class="bg-vy-jang flex-wrap space-between sticky top-0 md:col-span-12 md:hidden h-screen sm:col-span-12 sm:hidden lg:col-span-2 lg:flex rounded-xl ">
           <div className="h-1/2 w-full">
@@ -107,7 +107,7 @@ export default function App() {
             <div className=" bg-[#F0F0F0] sm:col-span-1 md:col-span-1 lg:col-span-2 rounded-xl  grid grid-cols-4 gap-5 p-5">
               <div className="bg-white h-32 rounded-2xl sm:col-span-2 md:col-span-1 lg:col-span-1">
                 <div className=" p-3">
-                  <div className="flex flex-wrap justify-around">
+                  <div className="flex flex-wrap justify-around items-center">
                     <strong className=" text-sm">Living Room</strong>
                     <svg
                       class="w-7 h-7 text-black dark:text-white"
@@ -139,7 +139,7 @@ export default function App() {
               </div>
               <div className="bg-white h-32 rounded-2xl sm:col-span-2 md:col-span-1 lg:col-span-1">
                 <div className=" p-3">
-                  <div className="flex flex-wrap justify-around">
+                  <div className="flex flex-wrap justify-around items-center">
                     <strong className=" text-sm">Bedroom</strong>
                     <svg
                       class="w-7 h-7 text-black dark:text-white"
@@ -171,7 +171,7 @@ export default function App() {
               </div>
               <div className="bg-white h-32 rounded-2xl sm:col-span-2 md:col-span-1 lg:col-span-1">
                 <div className=" p-3">
-                  <div className="flex flex-wrap justify-around">
+                  <div className="flex flex-wrap justify-around items-center">
                     <strong className=" text-sm">Bathroom</strong>
                     <svg
                       class="w-7 h-7 text-black dark:text-white"
@@ -203,7 +203,7 @@ export default function App() {
               </div>
               <div className="bg-white h-32 rounded-2xl sm:col-span-2 md:col-span-1 lg:col-span-1">
                 <div className=" p-3">
-                  <div className="flex flex-wrap justify-around">
+                  <div className="flex flex-wrap justify-around items-center">
                     <strong className=" text-sm">Kitchen</strong>
                     <svg
                       class="w-7 h-7 text-black dark:text-white"
@@ -233,10 +233,59 @@ export default function App() {
                   </div>
                 </div>
               </div>
+              <div className=" col-span-4 grid grid-cols-12 gap-5">
+                <div className=" col-span-5 sm:col-span-12 md:col-span-12 lg:col-span-5 grid grid-cols-1 gap-5 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-1">
+                  <div className=" bg-white rounded-xl px-5 py-5 h-auto flex items-center">
+                    <div className="flex flex-wrap justify-between items-center">
+                      <div className=" flex h-20 w-20 shrink-0 grow-0 items-center justify-center rounded-full bg-white shadow-md shadow-slate-500"><img src="/images/temp.png" alt="temp" className=" w-5/12"></img></div>
+                    <div className=" pl-5">
+                      <p className=" text-sm font-semibold">Indoor Temperature</p>
+                      <h3 className=" text-4xl">25 <span className=" text-xl">&#8451;</span></h3>
+                    </div>
+                    </div>
+                  </div>
+                  <div className=" bg-white rounded-xl px-5 py-5 h-auto flex items-center">
+                    <div className="flex flex-wrap justify-between items-center">
+                      <div className=" flex h-20 w-20 shrink-0 grow-0 items-center justify-center rounded-full bg-white shadow-md shadow-slate-500"><img src="/images/percent.png" alt="temp" className=" w-5/12"></img></div>
+                    <div className=" pl-5">
+                      <p className=" text-sm font-semibold">Humidity </p>
+                      <h3 className=" text-4xl">30 <span className=" text-xl">%</span></h3>
+                    </div>
+                    </div>
+                  </div>
+                  
+                
+                </div>
+                <div className=" col-span-7 h-auto sm:col-span-12 md:col-span-12 lg:col-span-7 bg-white rounded-xl"></div>
+              </div>
+            </div>
+            <div className=" bg-[#F0F0F0] sm:col-span-1 md:col-span-1 lg:col-span-2 rounded-xl h-screen p-5">
+              <div className="flex flex-wrap justify-between items-center">
+                <p className=" text-sm font-semibold">Statictics</p>
+                <svg
+                      class="w-7 h-7 text-black dark:text-white"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-width="2"
+                        d="M6 12h0m6 0h0m6 0h0"
+                      />
+                    </svg>
+              </div>
             </div>
           </div>
         </div>
-        <div class="bg-white h-32 md:col-span-12 sm:col-span-12 lg:col-span-3 rounded-xl"></div>
+        <div class="bg-[#F0F0F0] h-3/4 md:col-span-12 sm:col-span-12 lg:col-span-3 rounded-xl px-5 py-10">
+          <div className=" flex items-center justify-center">
+           <img src="/images/avatar.png" className=" w-4/12"></img>     
+                 
+          </div>
+        </div>
       </div>
     </div>
   );
