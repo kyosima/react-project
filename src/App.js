@@ -1,6 +1,15 @@
+import React from 'react';
+import MobileHeader from './MobileHeader';
+
+
 export default function App() {
   return (
+    
     <div className="bg-[#A9C5DE] font-merri">
+       <div>
+      {/* Your other components */}
+      <MobileHeader />
+    </div>
       <div class="grid grid-cols-12 gap-5 container mx-auto p-6 md:px-6">
         <div class="bg-vy-jang flex-wrap space-between sticky top-0 md:col-span-12 md:hidden h-screen sm:col-span-12 sm:hidden lg:col-span-2 lg:flex rounded-xl ">
           <div className="h-1/2 w-full">
@@ -127,7 +136,7 @@ export default function App() {
                   <div className="flex flex-wrap justify-evenly">
                     <img
                       src="/images/living.png"
-                      className="w-3/12 object-contain"
+                      className="w-3/12 object-contain" alt="ok"
                     ></img>
 
                     <div className=" content-center">
@@ -159,7 +168,7 @@ export default function App() {
                   <div className="flex flex-wrap justify-evenly">
                     <img
                       src="/images/bed.png"
-                      className="w-3/12 object-contain"
+                      className="w-3/12 object-contain" alt="ok"
                     ></img>
 
                     <div className=" content-center">
@@ -191,7 +200,7 @@ export default function App() {
                   <div className="flex flex-wrap justify-evenly">
                     <img
                       src="/images/bath.png"
-                      className="w-3/12 object-contain"
+                      className="w-3/12 object-contain" alt="ok"
                     ></img>
 
                     <div className=" content-center">
@@ -223,7 +232,7 @@ export default function App() {
                   <div className="flex flex-wrap justify-evenly">
                     <img
                       src="/images/kitchen.png"
-                      className="w-3/12 object-contain"
+                      className="w-3/12 object-contain" alt="ok"
                     ></img>
 
                     <div className=" content-center">
@@ -282,7 +291,7 @@ export default function App() {
         </div>
         <div class="bg-[#F0F0F0] h-3/4 md:col-span-12 sm:col-span-12 lg:col-span-3 rounded-xl px-5 py-10">
           <div className=" flex items-center justify-center">
-           <img src="/images/avatar.png" className=" w-4/12"></img>     
+           <img src="/images/avatar.png" alt="ok" className=" w-4/12"></img>     
                  
           </div>
         </div>
